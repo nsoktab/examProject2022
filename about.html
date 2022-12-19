@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Golęczewo Uncovered for You" />
+    <meta name="keywords" content="village, history, map, nature, monuments" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Golęczewo Uncovered For You</title>
+  </head>
+  <body>
+    <!--WEB NAVIGATION-->
+    <header>
+      <a href="index.html"
+        ><img src="images/logo.svg" alt="Page Logo" class="logo"
+      /></a>
+
+      <nav class="navbar">
+        <div class="menu-item" id="current">
+          <div class="dropdown" id="dropdown_about">
+            ABOUT <img src="images/arrow.svg" alt="Arrow down" class="arrow" />
+            <div class="dropdown-content">
+              <a href="about.html">GOLĘCZEWO 101</a>
+              <a href="history.html">HISTORY</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a href="monuments.html">MONUMENTS</a>
+        </div>
+        <div class="menu-item">
+          <div class="dropdown" id="dropdown_nature">
+            NATURE <img src="images/arrow.svg" alt="Arrow down" class="arrow" />
+            <div class="dropdown-content">
+              <a href="cherry.html">CHERRY ORCHARD</a>
+              <a href="nature.html">NATURE PRESERVE</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a href="community.html">COMMUNITY</a>
+        </div>
+        <a href="aboutPL.html" class="menu-link lng-inactive">POL</a>|
+        <a href="about.html" class="menu-link lng-active">ENG</a>
+      </nav>
+    </header>
+    <!--top section logo and burger menu-->
+    <div class="sticky-top">
+      <a href="index.html"
+        ><img src="images/logo.svg" alt="Page Logo" class="logo"
+      /></a>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+
+    <!--menu list -->
+    <nav class="nav-mobile">
+      <ul class="nav-links">
+        <li><a href="about.html" class="menu-link">Golęczewo 101</a></li>
+        <li><a href="history.html" class="menu-link">History</a></li>
+        <li><a href="monuments.html" class="menu-link">Monuments</a></li>
+        <li><a href="cherry.html" class="menu-link">Cherry Orchard</a></li>
+        <li><a href="nature.html" class="menu-link">Nature Preserve</a></li>
+        <li><a href="community.html" class="menu-link">Community</a></li>
+        <li>
+          <a href="aboutPL.html" class="menu-link lng-inactive">POL</a>|
+          <a href="about.html" class="menu-link lng-active">ENG</a>
+        </li>
+      </ul>
+    </nav>
+    <!--main banner-->
+    <div class="baner-subpage">
+      <img src="images/banner-about.JPG" alt="Panorama" class="baner-image" />
+      <h1 class="subpage-title">GOLĘCZEWO 101</h1>
+    </div>
+    <section id="content">
+      <div class="text">
+        <p>
+          Golęczewo is a village of more than 1,370 inhabitants located north of
+          Poznan. Very well developed infrastructure and location makes more and
+          more new people, including Poznanians, want to make Golęczewo their
+          new home.
+        </p>
+      </div>
+      <audio id="pronunciation">
+        <source src="images/pronunciation.mp3" type="audio/mpeg" />
+      </audio>
+      <div class="recording">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35.375"
+          height="30.461"
+          viewBox="0 0 35.375 30.461"
+          class="speaker"
+          onclick="toggle()"
+        >
+          <g
+            id="_8324192_ui_essential_app_sound_speaker_icon"
+            data-name="8324192_ui_essential_app_sound_speaker_icon"
+            transform="translate(1 0.707)"
+          >
+            <path
+              id="Path_38"
+              data-name="Path 38"
+              d="M13,22.269A5.135,5.135,0,0,0,13,12"
+              transform="translate(-0.163 -2.611)"
+              fill="none"
+              stroke="#fff"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              stroke-width="2"
+            />
+            <path
+              id="Path_39"
+              data-name="Path 39"
+              d="M8.135,13.7H3V23.971H8.135l7.7,7.7V6Z"
+              transform="translate(-3 -4.313)"
+              fill="none"
+              stroke="#fff"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              stroke-width="2"
+            />
+            <path
+              id="Path_40"
+              data-name="Path 40"
+              d="M24.314,33.733a20.541,20.541,0,0,0,0-29.047"
+              transform="translate(3.046 -4.686)"
+              fill="none"
+              stroke="#fff"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              stroke-width="2"
+            />
+            <path
+              id="Path_41"
+              data-name="Path 41"
+              d="M21.485,29.3a15.4,15.4,0,0,0,0-21.784"
+              transform="translate(2.244 -3.883)"
+              fill="none"
+              stroke="#fff"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              stroke-width="2"
+            />
+            <path
+              id="Path_42"
+              data-name="Path 42"
+              d="M18.657,24.866a10.27,10.27,0,0,0,0-14.523"
+              transform="translate(1.441 -3.081)"
+              fill="none"
+              stroke="#fff"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              stroke-width="2"
+            />
+          </g>
+        </svg>
+
+        <p>
+          Golęczewo <br />
+          Go-LEN-che-vo
+        </p>
+      </div>
+      <!-- photo Carousel 1
+-->
+      <div class="photo-carousel">
+        <div class="swiper">
+          <!--additional required wrapper-->
+          <div class="swiper-wrapper">
+            <!-- Sliding images-->
+            <div class="swiper-slide">
+              <img src="images/budynek.jpg" alt="Building" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/budynek2.jpg" alt="Building" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/budynek3.jpg" alt="Building" />
+            </div>
+          </div>
+
+          <!-- If pagination needed-->
+          <div class="swiper-pagination"></div>
+
+          <!--if navigation buttons needed-->
+          <div class="swiper-btn-prev"></div>
+          <div class="swiper-btn-next"></div>
+        </div>
+      </div>
+      <div class="text">
+        <p>
+          In Golęczewo you can find monuments telling the more than 700-year
+          history of the village, including its most interesting part when it
+          was called Golenhofen. It is also a place where close contact with
+          beautiful nature is your daily habit.
+        </p>
+      </div>
+      <!-- photo Carousel 2
+-->
+      <div class="photo-carousel">
+        <div class="swiper">
+          <!--additional required wrapper-->
+          <div class="swiper-wrapper">
+            <!-- Sliding images-->
+            <div class="swiper-slide">
+              <img src="images/panorama.JPG" alt="Panorama" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/panorama3.jpg" alt="Panorama" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/panorama4.jpg" alt="Panorama" />
+            </div>
+          </div>
+
+          <!-- If pagination needed-->
+          <div class="swiper-pagination"></div>
+
+          <!--if navigation buttons needed-->
+          <div class="swiper-btn-prev"></div>
+          <div class="swiper-btn-next"></div>
+        </div>
+      </div>
+      <div class="text">
+        <p>
+          Residents can get involved in a number of associations aimed at
+          activating the local community, organizing events or promoting the
+          village and its history.
+        </p>
+      </div>
+      <!-- photo Carousel 2
+-->
+      <div class="photo-carousel">
+        <div class="swiper">
+          <!--additional required wrapper-->
+          <div class="swiper-wrapper">
+            <!-- Sliding images-->
+            <div class="swiper-slide">
+              <img src="images/wisnie.jpg" alt="Meadow" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/dolina-samicy.jpg" alt="Sunset" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/las.jpg" alt="Tree" />
+            </div>
+          </div>
+
+          <!-- If pagination needed-->
+          <div class="swiper-pagination"></div>
+
+          <!--if navigation buttons needed-->
+          <div class="swiper-btn-prev"></div>
+          <div class="swiper-btn-next"></div>
+        </div>
+      </div>
+      <div class="text">
+        <p>
+          If you are looking for a balance between enjoying the conveniences of
+          a big city and being surrounded by nature and wildlife on a daily
+          basis, Golęczewo may be the perfect choice.
+        </p>
+      </div>
+    </section>
+    <div class="text yellow">
+      <p>
+        This site aims to show you those places that make up the identity of the
+        village. It presents places liked by locals that may soon become your
+        favorites as well.
+      </p>
+    </div>
+    <div class="footer">© Natalia Sokołowska, 2022</div>
+    <script>
+      //play audio and change the stroke when playing, back to white when ended
+      var play = false;
+      var audio = document.getElementById("pronunciation");
+      var paths = document.getElementsByTagName("path");
+      function toggle() {
+        if (play) {
+          audio.pause();
+          for (var i = 0; i < paths.length; i++) {
+            paths[i].setAttribute("stroke", "#FFFFFF");
+          }
+        } else {
+          audio.play();
+          for (var i = 0; i < paths.length; i++) {
+            paths[i].setAttribute("stroke", "#000000");
+          }
+        }
+      }
+      audio.onplaying = function () {
+        play = true;
+      };
+      audio.onpause = function () {
+        play = false;
+      };
+      audio.onended = function () {
+        for (var i = 0; i < paths.length; i++) {
+          paths[i].setAttribute("stroke", "#FFFFFF");
+        }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="js.js"></script>
+    <script src="navigation.js"></script>
+  </body>
+</html>

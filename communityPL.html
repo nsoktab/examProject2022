@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Golęczewo Odkryte Dla Ciebie" />
+    <meta name="keywords" content="wieś, historia, mapa, natura, zabytki" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+    <title>Golęczewo Uncovered For You</title>
+  </head>
+  <body>
+    <!--WEB NAVIGATION-->
+    <header>
+      <a href="indexPL.html"
+        ><img src="images/logo.svg" alt="Page Logo" class="logo"
+      /></a>
+
+      <nav class="navbar">
+        <div class="menu-item">
+          <div class="dropdown" id="dropdown_about">
+            O WSI <img src="images/arrow.svg" alt="Arrow down" class="arrow" />
+            <div class="dropdown-content">
+              <a href="aboutPL.html">GOLĘCZEWO 101</a>
+              <a href="historyPL.html">HISTORIA</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a href="monumentsPL.html">ZABYTKI</a>
+        </div>
+        <div class="menu-item">
+          <div class="dropdown" id="dropdown_nature">
+            NATURA <img src="images/arrow.svg" alt="Arrow down" class="arrow" />
+            <div class="dropdown-content">
+              <a href="cherryPL.html">SAD WIŚNIOWY</a>
+              <a href="naturePL.html">DOLINA SAMICY</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" id="current">
+          <a href="communityPL.html">SPOŁECZNOŚĆ</a>
+        </div>
+        <a href="communityPL.html" class="menu-link lng-active">POL</a>|
+        <a href="community.html" class="menu-link lng-inactive">ENG</a>
+      </nav>
+    </header>
+    <section id="top">
+      <!--top section logo and burger menu-->
+      <div class="sticky-top">
+        <a href="indexPL.html"
+          ><img src="images/logo.svg" alt="Page Logo" class="logo"
+        /></a>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+
+      <!--menu list -->
+      <nav class="nav-mobile">
+        <ul class="nav-links">
+          <li><a href="aboutPL.html" class="menu-link">Golęczewo 101</a></li>
+          <li><a href="historyPL.html" class="menu-link">Historia</a></li>
+          <li><a href="monumentsPL.html" class="menu-link">Zabytki</a></li>
+          <li><a href="cherryPL.html" class="menu-link">Sad Wiśniowy</a></li>
+          <li><a href="naturePL.html" class="menu-link">Dolina Samicy</a></li>
+          <li><a href="communityPL.html" class="menu-link">Społeczność</a></li>
+          <li>
+            <a href="communityPL.html" class="menu-link lng-active">POL</a>|
+            <a href="community.html" class="menu-link lng-inactive">ENG</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!--main banner-->
+    <div class="baner-subpage">
+      <img src="images/panoramaZC.JPG" alt="Panorama" class="baner-image" />
+      <h1 class="subpage-title">SPOŁECZNOŚĆ</h1>
+    </div>
+    <section id="content">
+      <div class="text">
+        <p>
+          Jeżeli chcesz być na bieżąco z wydarzeniami ważnymi dla miejscowości
+          dołącz do poniższych grup lub polub na Facebooku profile stowarzyszeń.
+        </p>
+      </div>
+
+      <div class="groups">
+        <div class="group-card">
+          <h1 class="group-name">SOŁECTWO GOLĘCZEWO</h1>
+          <img
+            src="images/solectwo.jpg"
+            alt="Sołectwo Logo"
+            class="group-img"
+          />
+          <p class="group-descr">
+            Sołtyska wsi pani Katarzyna Kachel regularnie informuje o
+            planowanych inwestycjach lub obwieszczeniach dotyczących Golęczewa
+            na profilu Sołectwa.
+          </p>
+          <div class="group-button" id="solectwo_btn">OBSERWUJ</div>
+        </div>
+        <div class="group-card">
+          <h1 class="group-name">KGW GOLĘCZEWO</h1>
+          <img
+            src="images/goleczewianki.JPG"
+            alt="KGW Logo"
+            class="group-img"
+          />
+          <p class="group-descr">
+            Aktywne Golęczewianki stworzyły Koło Gospodyń Wiejskich i co roku
+            organizują wydarzenia dla kobiet i nie tylko. 14 lutego jedna
+            Walentynka zagwarantowana.
+          </p>
+          <div class="group-button" id="kgw_btn">OBSERWUJ</div>
+        </div>
+        <div class="group-card">
+          <h1 class="group-name">GOLĘCZEWIANIE</h1>
+          <img
+            src="images/goleczewienieFB.JPG"
+            alt="Sołectwo Logo"
+            class="group-img"
+          />
+          <p class="group-descr">
+            Grupa “Golęczewianie” na Facebooku gromadzi mieszkańców i chętnych
+            do stania się nimi. Zakres tematów szeroki.
+          </p>
+          <div class="group-button" id="goleczewianie_button">DOŁĄCZ</div>
+        </div>
+        <div class="group-card">
+          <h1 class="group-name">STRAŻ GMINNA</h1>
+          <img src="images/straz.JPG" alt="Sołectwo Logo" class="group-img" />
+          <p class="group-descr">
+            Jeżeli Twój pies wybierze się na spacer bez Twojej wiedzy, może
+            napotkać strażników Gminy Suchy Las, a potem stać się sławny na ich
+            stronie na Facebooku. Warto zaobserwować.
+          </p>
+          <div class="group-button" id="straz_btn">OBSERWUJ</div>
+        </div>
+        <div class="group-card">
+          <h1 class="group-name">GOLENHOFEN</h1>
+          <img
+            src="images/golenhofen.JPG"
+            alt="Sołectwo Logo"
+            class="group-img"
+          />
+          <p class="group-descr">
+            Jeżeli chcesz wiedzieć więcej o historii Golęczewa, najlepszym
+            źródłem wiedzy jest strona Pana Grzegorza Grupińskiego, który
+            regularnie dzieli się fragmentami artykułów sprzed dziesięcioleci
+            czy zdjęciami dawnego Golęczewa.
+          </p>
+          <div class="group-button" id="golenhofen_btn">ODWIEDŹ</div>
+        </div>
+        <div class="group-card">
+          <h1 class="group-name">ZERO WASTE</h1>
+          <img
+            src="images/zerowaste.JPG"
+            alt="Sołectwo Logo"
+            class="group-img"
+          />
+          <p class="group-descr">
+            Na grupie Zero Waste - Gmina Suchy Las mieszkańcy gminy wystawiają
+            rzeczy, które bezpłatnie chcą puścić w drugi obieg.
+          </p>
+          <div class="group-button" id="zero_btn">DOŁĄCZ</div>
+        </div>
+      </div>
+    </section>
+    <div class="footer">© Natalia Sokołowska, 2022</div>
+
+    <script src="js.js"></script>
+    <script src="navigation.js"></script>
+    <script src="button-community.js"></script>
+  </body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Golęczewo Uncovered for You" />
+    <meta name="keywords" content="village, history, map, nature, monuments" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <title>Golęczewo Uncovered For You</title>
+  </head>
+  <body>
+    <!--WEB NAVIGATION-->
+    <header>
+      <a href="index.html"
+        ><img src="images/logo.svg" alt="Page Logo" class="logo"
+      /></a>
+
+      <nav class="navbar">
+        <div class="menu-item">
+          <div class="dropdown" id="dropdown_about">
+            ABOUT <img src="images/arrow.svg" alt="Arrow down" class="arrow" />
+            <div class="dropdown-content">
+              <a href="about.html">GOLĘCZEWO 101</a>
+              <a href="history.html">HISTORY</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" id="current">
+          <a href="monuments.html">MONUMENTS</a>
+        </div>
+        <div class="menu-item">
+          <div class="dropdown" id="dropdown_nature">
+            NATURE <img src="images/arrow.svg" alt="Arrow down" class="arrow" />
+            <div class="dropdown-content">
+              <a href="cherry.html">CHERRY ORCHARD</a>
+              <a href="nature.html">NATURE PRESERVE</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a href="community.html">COMMUNITY</a>
+        </div>
+        <a href="monumentsPL.html" class="menu-link lng-inactive">POL</a>|
+        <a href="monuments.html" class="menu-link lng-active">ENG</a>
+      </nav>
+    </header>
+    <!--top section logo and burger menu-->
+    <section id="top">
+      <div class="sticky-top">
+        <a href="index.html"
+          ><img src="images/logo.svg" alt="Page Logo" class="logo"
+        /></a>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+
+      <!--menu list -->
+      <nav class="nav-mobile">
+        <ul class="nav-links">
+          <li><a href="about.html" class="menu-link">Golęczewo 101</a></li>
+          <li><a href="history.html" class="menu-link">History</a></li>
+          <li><a href="monuments.html" class="menu-link">Monuments</a></li>
+          <li><a href="cherry.html" class="menu-link">Cherry Orchard</a></li>
+          <li><a href="nature.html" class="menu-link">Nature Preserve</a></li>
+          <li><a href="community.html" class="menu-link">Community</a></li>
+          <li>
+            <a href="monumentsPL.html" class="menu-link lng-inactive">POL</a>|
+            <a href="monuments.html" class="menu-link lng-active">ENG</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!--main banner-->
+    <div class="baner-subpage">
+      <img
+        src="images/banner-monuments.JPG"
+        alt="Panorama"
+        class="baner-image"
+      />
+      <h1 class="subpage-title">MONUMENTS</h1>
+    </div>
+    <section id="content">
+      <div class="text">
+        <p>
+          Dworcowa Street has always been the main street of the village and
+          many buildings built along it were representing the architectural
+          styles used throughout the German Empire. On the cards you can read
+          what characterises each building.
+        </p>
+      </div>
+
+      <!-- section under construction on MOBILE-->
+      <div class="section404">
+        <h4>Section Under Construction</h4>
+        <p>The tender for building this section has not yet been awarded.</p>
+      </div>
+      <!--cards carousel ONLY WEB-->
+      <div class="photo-carousel-mn">
+        <div class="swiper">
+          <!--additional required wrapper-->
+          <div class="swiper-wrapper">
+            <!-- Sliding images-->
+            <div class="swiper-slide">
+              <div class="card-container">
+                <div class="card">
+                  <div class="card-front" id="school"></div>
+                  <div class="card-back">
+                    <div class="card-back-top">
+                      <p><strong>Address:</strong> Dworcowa 59</p>
+                      <p>
+                        <strong>Former function:</strong> School and Evangelical
+                        church
+                      </p>
+                      <p><strong>Today:</strong> primary school and flats</p>
+                    </div>
+                    <div class="card-descr">
+                      <p class="card-">
+                        In the original construction, a clock tower towered over
+                        the right-hand part of the church. The first school year
+                        was inaugurated as early as 1905. 39 pupils studied in a
+                        classroom above whose door was written:
+                        <span class="italic"
+                          >Be obedient to your teachers and listen to
+                          them!.</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <div class="card">
+                  <div class="card-front" id="inn"></div>
+                  <div class="card-back">
+                    <div class="card-back-top">
+                      <p><strong>Address:</strong> Dworcowa 58</p>
+                      <p>
+                        <strong>Former function:</strong> inn with accommodation
+                      </p>
+                      <p><strong>Today:</strong> grocery shop and flat</p>
+                    </div>
+                    <div class="card-descr">
+                      <p class="card-">
+                        It was here that visitors and residents lived it up. The
+                        complex included a restaurant, bar, shop and playroom.
+                        Visitors would leave their steeds in the stable, right
+                        next to the owner's cows and pigs.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <div class="card">
+                  <div class="card-front" id="dworcowa57"></div>
+                  <div class="card-back">
+                    <div class="card-back-top">
+                      <p><strong>Address:</strong> Dworcowa 57</p>
+                      <p><strong>Function:</strong> residential house</p>
+                    </div>
+                    <div class="card-descr">
+                      <p class="card-">
+                        The first inhabitant of the house was Johan Arwa with
+                        his family, who came from the area that today is around
+                        Belgrade in Serbia. It is definitely a prominent
+                        building in its height, forming together with the school
+                        and the inn the frame of the village centre.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <div class="card">
+                  <div class="card-front" id="dworcowa35"></div>
+                  <div class="card-back">
+                    <div class="card-back-top">
+                      <p><strong>Address:</strong> Dworcowa 35</p>
+                      <p><strong>Function:</strong> residential house</p>
+                    </div>
+                    <div class="card-descr">
+                      <p class="card-">
+                        The unique colour of the shutters and some of the beams
+                        immediately draw the attention of the passer-by. The
+                        charming small windows, through which the incoming light
+                        illuminates the staircase, create an interesting
+                        asymmetry on the front wall.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <div class="card">
+                  <div class="card-front" id="dworcowa31"></div>
+                  <div class="card-back">
+                    <div class="card-back-top">
+                      <p><strong>Address:</strong> Dworcowa 29/31</p>
+                      <p><strong>Function:</strong> residential house</p>
+                    </div>
+                    <div class="card-descr">
+                      <p class="card-">
+                        Today a semi-detached house, but formerly an apartment
+                        building combined with a barn - a controversial
+                        combination.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <div class="card">
+                  <div class="card-front" id="train-station"></div>
+                  <div class="card-back">
+                    <div class="card-back-top">
+                      <p><strong>Address:</strong> Dworcowa 20</p>
+                      <p><strong>Function:</strong> Train station</p>
+                    </div>
+                    <div class="card-descr">
+                      <p class="card-">
+                        Renovated in 2020, the building remains unchanged as it
+                        was built in 1906. Inside the waiting room there are
+                        documents from the last century that show the
+                        non-standard, from our perspective, railway deliveries
+                        to Golenhofen.
+                        <br />
+                        <br />
+                        <span class="italic"
+                          >Tip: Free legal advice is available once a week from
+                          a legal advisor.</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- If pagination needed-->
+          <div class="swiper-pagination"></div>
+
+          <!--if navigation buttons needed-->
+          <div class="swiper-btn-prev"></div>
+          <div class="swiper-btn-prev"></div>
+          <div class="swiper-btn-prev"></div>
+          <div class="swiper-btn-next"></div>
+          <div class="swiper-btn-next"></div>
+          <div class="swiper-btn-next"></div>
+        </div>
+      </div>
+
+      <div class="text">
+        <h3>MAP</h3>
+        <p class="with-heading">
+          The map shows the location of the various houses, hopefully it will
+          inspire you to go for a walk one afternoon and notice more details.
+          The history may still be alive.
+        </p>
+        <div id="map"></div>
+      </div>
+    </section>
+    <div class="footer">© Natalia Sokołowska, 2022</div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      //images carousel
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        slidesPerView: 1.5,
+        centeredSlides: true,
+        spaceBetween: 12,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        keyboard: {
+          enabled: true,
+        },
+      });
+    </script>
+    <script src="map-monuments.js"></script>
+    <script src="js.js"></script>
+    <script src="navigation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Golęczewo Uncovered for You" />
+    <meta name="keywords" content="village, history, map, nature, monuments" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+    <title>Golęczewo Uncovered For You</title>
+  </head>
+  <body>
+    <!--WEB NAVIGATION-->
+    <header>
+      <a href="index.html"
+        ><img src="images/logo.svg" alt="Page Logo" class="logo"
+      /></a>
+
+      <nav class="navbar">
+        <div class="menu-item">
+          <div class="dropdown" id="dropdown_about">
+            ABOUT <img src="images/arrow.svg" alt="Arrow down" class="arrow" />
+            <div class="dropdown-content">
+              <a href="about.html">GOLĘCZEWO 101</a>
+              <a href="history.html">HISTORY</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a href="monuments.html">MONUMENTS</a>
+        </div>
+        <div class="menu-item">
+          <div class="dropdown" id="dropdown_nature">
+            NATURE <img src="images/arrow.svg" alt="Arrow down" class="arrow" />
+            <div class="dropdown-content">
+              <a href="cherry.html">CHERRY ORCHARD</a>
+              <a href="nature.html">NATURE PRESERVE</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" id="current">
+          <a href="community.html">COMMUNITY</a>
+        </div>
+        <a href="communityPL.html" class="menu-link lng-inactive">POL</a>|
+        <a href="community.html" class="menu-link lng-active">ENG</a>
+      </nav>
+    </header>
+    <!--top section logo and burger menu-->
+    <div class="sticky-top">
+      <a href="index.html"
+        ><img src="images/logo.svg" alt="Page Logo" class="logo"
+      /></a>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+
+    <!--menu list -->
+    <nav class="nav-mobile">
+      <ul class="nav-links">
+        <li><a href="about.html" class="menu-link">Golęczewo 101</a></li>
+        <li><a href="history.html" class="menu-link">History</a></li>
+        <li><a href="monuments.html" class="menu-link">Monuments</a></li>
+        <li><a href="cherry.html" class="menu-link">Cherry Orchard</a></li>
+        <li><a href="nature.html" class="menu-link">Nature Preserve</a></li>
+        <li><a href="community.html" class="menu-link">Community</a></li>
+        <li>
+          <a href="communityPL.html" class="menu-link lng-inactive">POL</a>|
+          <a href="community.html" class="menu-link lng-active">ENG</a>
+        </li>
+      </ul>
+    </nav>
+    <!--main banner-->
+    <div class="baner-subpage">
+      <img src="images/panoramaZC.JPG" alt="Panorama" class="baner-image" />
+      <h1 class="subpage-title">COMMUNITY</h1>
+    </div>
+    <section id="content">
+      <div class="text">
+        <p>
+          If you want to keep up to date with events important to the village
+          join the groups below or like the Facebook profiles of the
+          associations.
+        </p>
+      </div>
+
+      <div class="groups">
+        <div class="group-card">
+          <h1 class="group-name">SOŁECTWO GOLĘCZEWO</h1>
+          <img
+            src="images/solectwo.jpg"
+            alt="Sołectwo Logo"
+            class="group-img"
+          />
+          <p class="group-descr">
+            The village mayor, Mrs Katarzyna Kachel, regularly informs about
+            planned investments or announcements concerning Golęczewo on the
+            village profile.
+          </p>
+          <div class="group-button" id="solectwo_btn">FOLLOW PAGE</div>
+        </div>
+        <div class="group-card">
+          <h1 class="group-name">KGW GOLĘCZEWO</h1>
+          <img
+            src="images/goleczewianki.JPG"
+            alt="KGW Logo"
+            class="group-img"
+          />
+          <p class="group-descr">
+            Active Golęczewian women have formed Koło Gospodyń Wiejskich and
+            organise events for women and beyond every year. One Valentine's Day
+            card guaranteed for you!
+          </p>
+          <div class="group-button" id="kgw_btn">FOLLOW PAGE</div>
+        </div>
+        <div class="group-card">
+          <h1 class="group-name">GOLĘCZEWIANIE</h1>
+          <img
+            src="images/goleczewienieFB.JPG"
+            alt="Sołectwo Logo"
+            class="group-img"
+          />
+          <p class="group-descr">
+            The "Golęczewianie" Facebook group brings together residents and
+            those willing to become residents. The range of topics is wide.
+          </p>
+          <div class="group-button" id="goleczewianie_button">JOIN GROUP</div>
+        </div>
+        <div class="group-card">
+          <h1 class="group-name">MUNICIPAL GUARD</h1>
+          <img src="images/straz.JPG" alt="Sołectwo Logo" class="group-img" />
+          <p class="group-descr">
+            If your dog goes for a walk without your knowledge, it may encounter
+            the wardens of the Suchy Las Municipality and then become famous on
+            their Facebook page. Worth observing.
+          </p>
+          <div class="group-button" id="straz_btn">FOLLOW PAGE</div>
+        </div>
+        <div class="group-card">
+          <h1 class="group-name">GOLENHOFEN</h1>
+          <img
+            src="images/golenhofen.JPG"
+            alt="Sołectwo Logo"
+            class="group-img"
+          />
+          <p class="group-descr">
+            If you want to know more about the history of Golęczewo, the best
+            source of knowledge is the website of Mr. Grzegorz Grupinski, who
+            regularly shares excerpts from articles from decades ago or photos
+            of old Golęczewo.
+          </p>
+          <div class="group-button" id="golenhofen_btn">VISIT PAGE</div>
+        </div>
+        <div class="group-card">
+          <h1 class="group-name">ZERO WASTE</h1>
+          <img
+            src="images/zerowaste.JPG"
+            alt="Sołectwo Logo"
+            class="group-img"
+          />
+          <p class="group-descr">
+            On the Zero Waste - Municipality of Suchy Las group, the
+            municipality's residents put up items they want to let go into the
+            second circuit free of charge.
+          </p>
+          <div class="group-button" id="zero_btn">JOIN GROUP</div>
+        </div>
+      </div>
+    </section>
+    <div class="footer">© Natalia Sokołowska, 2022</div>
+
+    <script src="js.js"></script>
+    <script src="navigation.js"></script>
+    <script src="button-community.js"></script>
+  </body>
+</html>

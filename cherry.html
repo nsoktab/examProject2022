@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Golęczewo Uncovered for You" />
+    <meta name="keywords" content="village, history, map, nature, monuments" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+    <title>Golęczewo Uncovered For You</title>
+  </head>
+  <body>
+    <!--WEB NAVIGATION-->
+    <header>
+      <a href="index.html"
+        ><img src="images/logo.svg" alt="Page Logo" class="logo"
+      /></a>
+
+      <nav class="navbar">
+        <div class="menu-item">
+          <div class="dropdown" id="dropdown_about">
+            ABOUT <img src="images/arrow.svg" alt="Arrow down" class="arrow" />
+            <div class="dropdown-content">
+              <a href="about.html">GOLĘCZEWO 101</a>
+              <a href="history.html">HISTORY</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a href="monuments.html">MONUMENTS</a>
+        </div>
+        <div class="menu-item" id="current">
+          <div class="dropdown" id="dropdown_nature">
+            NATURE <img src="images/arrow.svg" alt="Arrow down" class="arrow" />
+            <div class="dropdown-content">
+              <a href="cherry.html">CHERRY ORCHARD</a>
+              <a href="nature.html">NATURE PRESERVE</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a href="community.html">COMMUNITY</a>
+        </div>
+        <a href="cherryPL.html" class="menu-link lng-inactive">POL</a>|
+        <a href="cherry.html" class="menu-link lng-active">ENG</a>
+      </nav>
+    </header>
+    <!--top section logo and burger menu-->
+    <div class="sticky-top">
+      <a href="index.html"
+        ><img src="images/logo.svg" alt="Page Logo" class="logo"
+      /></a>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+
+    <!--menu list -->
+    <nav class="nav-mobile">
+      <ul class="nav-links">
+        <li><a href="about.html" class="menu-link">Golęczewo 101</a></li>
+        <li><a href="history.html" class="menu-link">History</a></li>
+        <li><a href="monuments.html" class="menu-link">Monuments</a></li>
+        <li><a href="cherry.html" class="menu-link">Cherry Orchard</a></li>
+        <li><a href="nature.html" class="menu-link">Nature Preserve</a></li>
+        <li><a href="community.html" class="menu-link">Community</a></li>
+        <li>
+          <a href="cherryPL.html" class="menu-link lng-inactive">POL</a>|
+          <a href="cherry.html" class="menu-link lng-active">ENG</a>
+        </li>
+      </ul>
+    </nav>
+    <!--main banner-->
+    <div class="baner-subpage">
+      <img src="images/banner-cherry.jpg" alt="Panorama" class="baner-image" />
+      <h1 class="subpage-title">CHERRY ORCHARD</h1>
+    </div>
+    <section id="content">
+      <div class="text">
+        <p>
+          The most beautiful walking route is definitely the one around the
+          cherry orchard, which is a charming place at any time of the year.
+        </p>
+      </div>
+
+      <!-- photo Carousel 1
+-->
+      <div class="photo-carousel">
+        <div class="swiper">
+          <!--additional required wrapper-->
+          <div class="swiper-wrapper">
+            <!-- Sliding images-->
+            <div class="swiper-slide">
+              <img src="images/jera.jpg" alt="Building" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/jera1.jpg" alt="Building" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/jera2.jpg" alt="Building" />
+            </div>
+          </div>
+
+          <!-- If pagination needed-->
+          <div class="swiper-pagination"></div>
+
+          <!--if navigation buttons needed-->
+          <div class="swiper-btn-prev"></div>
+          <div class="swiper-btn-next"></div>
+        </div>
+      </div>
+      <div class="text">
+        <h3>LITTLE JAPAN</h3>
+        <p class="with-heading">
+          In spring, it is stunning with its white blossoms. Order delicious
+          sushi from
+          <a href="https://dokku.pl/" class="link-outside"
+            ><strong> Dokku Sushi</strong></a
+          >
+          with free delivery to Golęczewo, have a picnic on the nearby meadow
+          and enjoy the closest Japan experience you can have in Golęczewo.
+        </p>
+      </div>
+      <div class="text">
+        <h3>CHERRIES</h3>
+        <p class="with-heading">
+          During the July-August season, you can buy delicious cherries and
+          peaches straight from the supplier, the Spitalniak family, who have
+          been running the business for three generations now. Follow their
+          Facebook profile
+
+          <a
+            href="https://www.facebook.com/SadPodWiatrakiem"
+            class="link-outside"
+            ><strong>Sad Pod Wiatrakiem</strong></a
+          >
+          to know when the season starts and prices.
+        </p>
+        <p>
+          PS. Ask your neighbours who is the go-to address if you want to buy
+          tomatoes, pears or eggs from happy hens, because in Golęczewo we have
+          several such families.
+        </p>
+      </div>
+      <!-- photo Carousel 2
+-->
+      <div class="photo-carousel">
+        <div class="swiper">
+          <!--additional required wrapper-->
+          <div class="swiper-wrapper">
+            <!-- Sliding images-->
+            <div class="swiper-slide">
+              <img src="images/jera3.JPG" alt="Running Dog" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/jera4.jpg" alt="Running Dog" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/jera5.jpg" alt="Running Dog" />
+            </div>
+          </div>
+
+          <!-- If pagination needed-->
+          <div class="swiper-pagination"></div>
+
+          <!--if navigation buttons needed-->
+          <div class="swiper-btn-prev"></div>
+          <div class="swiper-btn-next"></div>
+        </div>
+      </div>
+      <div class="text">
+        <h3>SUNSET SPOT</h3>
+        <p class="with-heading">
+          Don't be afraid to venture off the road and walk down to the Samica
+          Valley, the best place to admire sunsets in Golęczewo and pick herbs
+          for tea.
+        </p>
+      </div>
+      <!-- photo Carousel 2
+-->
+      <div class="photo-carousel">
+        <div class="swiper">
+          <!--additional required wrapper-->
+          <div class="swiper-wrapper">
+            <!-- Sliding images-->
+            <div class="swiper-slide">
+              <img src="images/jera6.jpg" alt="Nature" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/jera7.jpg" alt="Nature" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/nature1.jpg" alt="Nature" />
+            </div>
+          </div>
+
+          <!-- If pagination needed-->
+          <div class="swiper-pagination"></div>
+
+          <!--if navigation buttons needed-->
+          <div class="swiper-btn-prev"></div>
+          <div class="swiper-btn-next"></div>
+        </div>
+      </div>
+      <div class="text">
+        <h3>MAP</h3>
+        <div id="map"></div>
+      </div>
+    </section>
+    <div class="footer">© Natalia Sokołowska, 2022</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      //images carousel
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="map.js"></script>
+    <script src="js.js"></script>
+    <script src="navigation.js"></script>
+  </body>
+</html>

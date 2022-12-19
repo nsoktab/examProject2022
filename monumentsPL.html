@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Golęczewo Odkryte Dla Ciebie" />
+    <meta name="keywords" content="wieś, historia, mapa, natura, zabytki" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <title>Golęczewo Uncovered For You</title>
+  </head>
+  <body>
+    <!--WEB NAVIGATION-->
+    <header>
+      <a href="indexPL.html"
+        ><img src="images/logo.svg" alt="Page Logo" class="logo"
+      /></a>
+
+      <nav class="navbar">
+        <div class="menu-item">
+          <div class="dropdown" id="dropdown_about">
+            O WSI <img src="images/arrow.svg" alt="Arrow down" class="arrow" />
+            <div class="dropdown-content">
+              <a href="about.html">GOLĘCZEWO 101</a>
+              <a href="history.html">HISTORIA</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item" id="current">
+          <a href="monuments.html">ZABYTKI</a>
+        </div>
+        <div class="menu-item">
+          <div class="dropdown" id="dropdown_nature">
+            NATURA <img src="images/arrow.svg" alt="Arrow down" class="arrow" />
+            <div class="dropdown-content">
+              <a href="cherry.html">SAD WIŚNIOWY</a>
+              <a href="nature.html">DOLINA SAMICY</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a href="community.html">SPOŁECZNOŚĆ</a>
+        </div>
+        <a href="monumentsPL.html" class="menu-link lng-active">POL</a>|
+        <a href="monuments.html" class="menu-link lng-inactive">ENG</a>
+      </nav>
+    </header>
+    <!--top section logo and burger menu-->
+    <section id="top">
+      <div class="sticky-top">
+        <a href="indexPL.html"
+          ><img src="images/logo.svg" alt="Page Logo" class="logo"
+        /></a>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+
+      <!--menu list -->
+      <nav class="nav-mobile">
+        <ul class="nav-links">
+          <li><a href="about.html" class="menu-link">Golęczewo 101</a></li>
+          <li><a href="history.html" class="menu-link">Historia</a></li>
+          <li><a href="monuments.html" class="menu-link">Zabytki</a></li>
+          <li><a href="cherry.html" class="menu-link">Sad Wiśniowy</a></li>
+          <li><a href="nature.html" class="menu-link">Dolina Samicy</a></li>
+          <li><a href="community.html" class="menu-link">Społeczność</a></li>
+          <li>
+            <a href="monumentsPL.html" class="menu-link lng-active">POL</a>|
+            <a href="monuments.html" class="menu-link lng-inactive">ENG</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!--main banner-->
+    <div class="baner-subpage">
+      <img
+        src="images/banner-monuments.JPG"
+        alt="Panorama"
+        class="baner-image"
+      />
+      <h1 class="subpage-title">ZABYTKI</h1>
+    </div>
+    <section id="content">
+      <div class="text">
+        <p>
+          Ulica Dworcowa od zawsze była główną ulicą wsi i to przy niej powstało
+          wiele budynków, które przedstawiały style architektoniczne stosowane w
+          całym Cesarstwie Niemieckim. Na kartach możesz przeczytać czym się
+          poszczególne budynki charakteryzują.
+        </p>
+      </div>
+
+      <!-- section under construction on MOBILE-->
+      <div class="section404">
+        <h4>Sekcja w przetargu</h4>
+        <p>
+          Przetarg na zaprogramowanie tej sekcji nie został jeszcze
+          rozstrzygnięty.
+        </p>
+      </div>
+      <!--cards carousel ONLY WEB-->
+      <div class="photo-carousel-mn">
+        <div class="swiper">
+          <!--additional required wrapper-->
+          <div class="swiper-wrapper">
+            <!-- Sliding images-->
+            <div class="swiper-slide">
+              <div class="card-container">
+                <div class="card">
+                  <div class="card-front" id="school"></div>
+                  <div class="card-back">
+                    <div class="card-back-top">
+                      <p><strong>Adres:</strong> Dworcowa 59</p>
+                      <p>
+                        <strong>Dawna funkcja:</strong> szkoła i kościół
+                        ewangelicki
+                      </p>
+                      <p>
+                        <strong>Dziś:</strong> szkoła z klasami 1-3 i mieszkania
+                      </p>
+                    </div>
+                    <div class="card-descr">
+                      <p class="card-">
+                        W pierwotnej konstrukcji nad prawą częścią kościelną
+                        górowała wieża zegarowo. Pierwszy rok szkolny
+                        zainaugurowano już w 1905. 39 uczniów uczyło się w
+                        klasie nad, której drzwiami napisano:
+                        <span class="italic"
+                          >„Bądźcie posłuszni nauczycielom i słuchajcie
+                          ich!”</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <div class="card">
+                  <div class="card-front" id="inn"></div>
+                  <div class="card-back">
+                    <div class="card-back-top">
+                      <p><strong>Adres:</strong> Dworcowa 58</p>
+                      <p>
+                        <strong>Dawna funkcja:</strong> Gospoda pod Złotą
+                        Gwiazdą
+                      </p>
+                      <p><strong>Dziś:</strong> sklep spożywczy</p>
+                    </div>
+                    <div class="card-descr">
+                      <p class="card-">
+                        To tutaj goście i mieszkańcy odpinali wrotki każdego
+                        dnia. W kompleksie znajdowała się restauracja, bar,
+                        sklep oraz bawialnia. Przyjezdni zostawiali swoje rumaki
+                        w stajni, tuż obok krów i świń właściciela.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <div class="card">
+                  <div class="card-front" id="dworcowa57"></div>
+                  <div class="card-back">
+                    <div class="card-back-top">
+                      <p><strong>Adres:</strong> Dworcowa 57</p>
+                      <p><strong>Funkcja:</strong> dom mieszkalny</p>
+                    </div>
+                    <div class="card-descr">
+                      <p class="card-">
+                        Pierwszym mieszkańcem domu był Johan Arwa razem ze swoją
+                        rodziną, który przybył z terenów dziś leżących w
+                        okolicach Belgradu w Serbii. Jest to zdecydowanie
+                        wyróżniający się swoją wysokością budynek, tworząc razem
+                        ze szkołą i gospodą ramę centrum wsi.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <div class="card">
+                  <div class="card-front" id="dworcowa35"></div>
+                  <div class="card-back">
+                    <div class="card-back-top">
+                      <p><strong>Adres:</strong> Dworcowa 35</p>
+                      <p><strong>Funkcja:</strong> budynek mieszkalny</p>
+                    </div>
+                    <div class="card-descr">
+                      <p class="card-">
+                        Wyjątkowy kolor okiennic i niektórych belek od razu
+                        przyciąga uwagę przechodnia. Urokliwe, małe okna, przez
+                        które wpadające światło oświetla klatkę schodową tworzą
+                        ciekawą asymetrię przedniej ściany.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <div class="card">
+                  <div class="card-front" id="dworcowa31"></div>
+                  <div class="card-back">
+                    <div class="card-back-top">
+                      <p><strong>Adres:</strong> Dworcowa 29/31</p>
+                      <p><strong>Funkcja:</strong> dom mieszkalny</p>
+                    </div>
+                    <div class="card-descr">
+                      <p class="card-">
+                        Dzisiaj bliźniak, a dawniej budynek mieszkalny połączony
+                        z oborą, a więc kontrowersyjna kombinacja. Mieszka w nim
+                        najlepszy Szymon, Szymon nad Szymonami, szymoniasty
+                        Szymon.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-container">
+                <div class="card">
+                  <div class="card-front" id="train-station"></div>
+                  <div class="card-back">
+                    <div class="card-back-top">
+                      <p><strong>Adres:</strong> Dworcowa 20</p>
+                      <p><strong>Funkcja:</strong> Stacja kolejowa</p>
+                    </div>
+                    <div class="card-descr">
+                      <p class="card-">
+                        Odnowiony w 2020 roku budynek pozostał w niezmienionym
+                        kształcie jak ten zbudowany w 1906 roku. Wewnątrz
+                        poczekalni znajdują się dokumenty z ubiegłego wieku,
+                        które przedstawiają niestandardowe z naszej perspektywy
+                        dostawy kolejowe do Golenhofen.
+                        <br />
+                        <br />
+                        <span class="italic"
+                          >PS. Raz w tygodniu można zasięgnąć bezpłatnej porady
+                          prawnej od doradcy prawnego.</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- If pagination needed-->
+          <div class="swiper-pagination"></div>
+
+          <!--if navigation buttons needed-->
+          <div class="swiper-btn-prev"></div>
+          <div class="swiper-btn-prev"></div>
+          <div class="swiper-btn-prev"></div>
+          <div class="swiper-btn-next"></div>
+          <div class="swiper-btn-next"></div>
+          <div class="swiper-btn-next"></div>
+        </div>
+      </div>
+
+      <div class="text">
+        <h3>MAPA</h3>
+        <p class="with-heading">
+          Na mapie zaznaczono lokalizację poszczególnych domostw, może
+          zainspiruje Cię ona do wybrania się, któregoś popołudnia na spacer i
+          dostrzeżenie więcej szczegółów. Historia może być nadal żywa.
+        </p>
+        <div id="map"></div>
+      </div>
+    </section>
+    <div class="footer">© Natalia Sokołowska, 2022</div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      //images carousel
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        slidesPerView: 1.5,
+        centeredSlides: true,
+        spaceBetween: 12,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        keyboard: {
+          enabled: true,
+        },
+      });
+    </script>
+    <script src="map-monuments.js"></script>
+    <script src="js.js"></script>
+    <script src="navigation.js"></script>
+  </body>
+</html>

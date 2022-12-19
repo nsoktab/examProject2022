@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Golęczewo Odkryte Dla Ciebie" />
+    <meta name="keywords" content="wieś, historia, mapa, natura, zabytki" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <meta
+    name="viewport"
+    content="initial-scale=1,maximum-scale=1,user-scalable=no"
+  />
+  <link
+    href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css"
+    rel="stylesheet"
+  />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+    <title>Golęczewo Uncovered For You</title>
+  </head>
+  <body>
+    <!--WEB NAVIGATION-->
+    <header>
+      <a href="indexPL.html"
+        ><img src="images/logo.svg" alt="Page Logo" class="logo"
+      /></a>
+
+      <nav class="navbar">
+        <div class="menu-item">
+          <div class="dropdown" id="dropdown_about">
+            O WSI <img src="images/arrow.svg" alt="Arrow down" class="arrow" />
+            <div class="dropdown-content">
+              <a href="aboutPL.html">GOLĘCZEWO 101</a>
+              <a href="historyPL.html">HISTORIA</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a href="monumentsPL.html">ZABYTKI</a>
+        </div>
+        <div class="menu-item" id="current">
+          <div class="dropdown" id="dropdown_nature">
+            NATURA <img src="images/arrow.svg" alt="Arrow down" class="arrow" />
+            <div class="dropdown-content">
+              <a href="cherryPL.html">SAD WIŚNIOWY</a>
+              <a href="naturePL.html">DOLINA SAMICY</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <a href="communityPL.html">SPOŁECZNOŚĆ</a>
+        </div>
+        <a href="cherryPL.html" class="menu-link lng-active">POL</a>|
+        <a href="cherry.html" class="menu-link lng-inactive">ENG</a>
+      </nav>
+    </header>
+    <section id="top">
+      <!--top section logo and burger menu-->
+      <div class="sticky-top">
+        <a href="indexPL.html"
+          ><img src="images/logo.svg" alt="Page Logo" class="logo"
+        /></a>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+
+      <!--menu list -->
+      <nav class="nav-mobile">
+        <ul class="nav-links">
+          <li><a href="aboutPL.html" class="menu-link">Golęczewo 101</a></li>
+          <li><a href="historyPL.html" class="menu-link">Historia</a></li>
+          <li><a href="monumentsPL.html" class="menu-link">Zabytki</a></li>
+          <li><a href="cherryPL.html" class="menu-link">Sad Wiśniowy</a></li>
+          <li><a href="naturePL.html" class="menu-link">Dolina Samicy</a></li>
+          <li><a href="communityPL.html" class="menu-link">Społeczność</a></li>
+          <li>
+            <a href="cherryPL.html" class="menu-link lng-active">POL</a>|
+            <a href="cherry.html" class="menu-link lng-inactive">ENG</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!--main banner-->
+    <div class="baner-subpage">
+      <img src="images/banner-cherry.jpg" alt="Panorama" class="baner-image" />
+      <h1 class="subpage-title">SAD WIŚNIOWY</h1>
+    </div>
+<section id="content">
+    <div class="text">
+      <p>
+        Najpiękniejsza trasa spacerowa to zdecydowanie ta wokół sadu wiśniowego, który jest urokliwym miejscem o każdej porze roku.
+      </p>
+    </div>
+
+    <!-- photo Carousel 1
+-->
+    <div class="photo-carousel">
+      <div class="swiper">
+        <!--additional required wrapper-->
+        <div class="swiper-wrapper">
+          <!-- Sliding images-->
+          <div class="swiper-slide">
+            <img src="images/jera.jpg" alt="Building" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/jera1.jpg" alt="Building" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/jera2.jpg" alt="Building" />
+          </div>
+        </div>
+
+        <!-- If pagination needed-->
+        <div class="swiper-pagination"></div>
+
+        <!--if navigation buttons needed-->
+        <div class="swiper-btn-prev"></div>
+        <div class="swiper-btn-next"></div>
+      </div>
+    </div>
+    <div class="text">
+      <h3>MAŁA JAPONIA</h3>
+      <p class="with-heading">
+        Wiosną zachwyca białymi kwiatami. Zamów przepyszne sushi z
+        <a href="https://dokku.pl/" class="link-outside"
+          ><strong> Dokku Sushi</strong></a
+        >
+        z darmową dostawą do Golęczewa, zrób piknik na pobliskiej łące i ciesz się najbliższym doświadczeniem Japonii jakie możesz mieć w Golęczewie.
+
+      </p>
+    </div>
+    <div class="text">
+      <h3>WIŚNIE</h3>
+      <p class="with-heading">
+        W sezonie lipiec- sierpień możesz kupić pyszne wiśnie i brzoskwinie prosto od dostawcy - rodziny Śpitalniaków, która prowadzi uprawę od trzech pokoleń. Śledź ich profil na Facebooku
+
+        <a href="https://www.facebook.com/SadPodWiatrakiem" class="link-outside"
+          ><strong>Sad Pod Wiatrakiem</strong></a
+        >
+        , aby wiedzieć kiedy zaczyna się sezon. 
+      </p>
+      <p>
+        PS. Popytaj swoich sąsiadów u kogo możesz kupić pomidory, gruszki lub jajka od szczęśliwych kur, bo w Golęczewie mamy kilka takich domostw.</p>
+      </p>
+    </div>
+    <!-- photo Carousel 2
+-->
+    <div class="photo-carousel">
+      <div class="swiper">
+        <!--additional required wrapper-->
+        <div class="swiper-wrapper">
+          <!-- Sliding images-->
+          <div class="swiper-slide">
+            <img src="images/jera3.JPG" alt="Running Dog" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/jera4.jpg" alt="Running Dog" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/jera5.jpg" alt="Running Dog" />
+          </div>
+        </div>
+
+        <!-- If pagination needed-->
+        <div class="swiper-pagination"></div>
+
+        <!--if navigation buttons needed-->
+        <div class="swiper-btn-prev"></div>
+        <div class="swiper-btn-next"></div>
+      </div>
+    </div>
+    <div class="text">
+      <h3>ZACHODY SŁOŃCA</h3>
+      <p class="with-heading">
+        Nie bój się zboczyć z drogi i pójść w dół do Doliny Samicy, najlepszego miejsca na podziwianie zachodów Słońca w Golęczewie i zbieranie ziół na herbatę.
+      </p>
+    </div>
+    <!-- photo Carousel 2
+-->
+    <div class="photo-carousel">
+      <div class="swiper">
+        <!--additional required wrapper-->
+        <div class="swiper-wrapper">
+          <!-- Sliding images-->
+          <div class="swiper-slide">
+            <img src="images/jera6.jpg" alt="Nature" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/jera7.jpg" alt="Nature" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/nature1.jpg" alt="Nature" />
+          </div>
+        </div>
+
+        <!-- If pagination needed-->
+        <div class="swiper-pagination"></div>
+
+        <!--if navigation buttons needed-->
+        <div class="swiper-btn-prev"></div>
+        <div class="swiper-btn-next"></div>
+      </div>
+    </div>
+    <div class="text">
+        <h3>MAPA</h3>
+        <div id="map">
+            
+        </div>
+      </div>
+    </section>
+    <div class="footer">© Natalia Sokołowska, 2022</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      //images carousel
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+     
+ 
+      
+    </script>
+    <script src="map.js"></script>
+    <script src="js.js"></script>
+    <script src="navigation.js"></script>
+  </body>
+</html>
